@@ -8,64 +8,60 @@ import type { Product } from '../../lib/supabase'
 const products: Product[] = [
   {
     id: '1',
-    name: 'Arreglo floral en caja',
-    price: 350,
-    image: '',
+    name: 'Cajita Personalizable',
+    price: 10000,
+    image: 'https://res.cloudinary.com/dq7wcdneb/image/upload/v1776359194/Generated_Image_April_15_2026_-_10_16AM_ejkgmo.png',
     category: 'manualidades',
-    description: 'Elegante arreglo floral hecho a mano en caja kraft.',
-    whatsapp_message: 'Hola Elvia, quiero el Arreglo floral en caja 🌸',
+    description: 'Cajita personalizada con los colores y diseño de tu preferencia.',
+    whatsapp_message: 'Hola Elvia, quiero una cajita personalizada 🎁',
   },
   {
     id: '2',
-    name: 'Vela aromática artesanal',
-    price: 180,
-    image: '',
+    name: 'Manilla con nombre personalizado',
+    price: 5000,
+    image: 'https://res.cloudinary.com/dq7wcdneb/image/upload/v1776438358/Generated_Image_April_17_2026_-_10_05AM_1_wiyarx.png',
     category: 'manualidades',
-    description: 'Vela de soya con esencias naturales, perfecta para regalar.',
-    whatsapp_message: 'Hola Elvia, me interesa la Vela aromática artesanal 🕯️',
+    description: 'Manilla personalizada con el nombre de tu preferencia.',
+    whatsapp_message: 'Hola Elvia, quiero una manilla personalizada 📿',
   },
   {
     id: '3',
-    name: 'Porta retrato bordado',
-    price: 220,
-    image: '',
+    name: 'Manilla Unicolor',
+    price: 5000,
+    image: 'https://res.cloudinary.com/dq7wcdneb/image/upload/v1776438358/Generated_Image_April_17_2026_-_10_05AM_3_ydm9hp.png',
     category: 'manualidades',
-    description: 'Marco bordado a mano con diseños florales únicos.',
-    whatsapp_message: 'Hola Elvia, quiero el Porta retrato bordado 🖼️',
+    description: 'Manilla unicolor con el color de tu preferencia.',
+    whatsapp_message: 'Hola Elvia, quiero una manilla unicolor 📿',
   },
   {
     id: '4',
-    name: 'Set de jabones naturales',
-    price: 290,
-    image: '',
+    name: 'Lapicero bordado personalizado',
+    price: 8000,
+    image: 'https://res.cloudinary.com/dq7wcdneb/image/upload/v1776438358/Generated_Image_April_17_2026_-_10_05AM_2_sv7z5c.png',
     category: 'manualidades',
-    description: 'Set de 3 jabones artesanales con ingredientes naturales.',
-    whatsapp_message: 'Hola Elvia, me interesa el Set de jabones naturales 🧼',
+    description: 'Lapicero bordado personalizado con el nombre de tu preferencia.',
+    whatsapp_message: 'Hola Elvia, quiero un lapicero bordado personalizado 🖊️',
   },
   {
     id: '5',
-    name: 'Maceta decorativa pintada',
-    price: 160,
-    image: '',
+    name: 'Manilla Unisex con tematica de tu equipo preferido',
+    price: 5000,
+    image: 'https://res.cloudinary.com/dq7wcdneb/image/upload/v1776438358/Generated_Image_April_17_2026_-_10_05AM_4_y1ti36.png',
     category: 'manualidades',
-    description: 'Maceta de barro pintada a mano con diseños únicos.',
-    whatsapp_message: 'Hola Elvia, quiero la Maceta decorativa pintada 🪴',
+    description: 'Manilla unisex con tematica de tu equipo preferido.',
+    whatsapp_message: 'Hola Elvia, quiero una manilla unisex con tematica de mi equipo preferido 📿',
   },
   {
     id: '6',
-    name: 'Caja regalo personalizada',
-    price: 450,
-    image: '',
+    name: 'Llavero personalizado',
+    price: 5000,
+    image: 'https://res.cloudinary.com/dq7wcdneb/image/upload/v1776438358/Generated_Image_April_17_2026_-_10_05AM_c8a3ou.png',
     category: 'manualidades',
-    description: 'Caja regalo armada con productos artesanales seleccionados.',
-    whatsapp_message: 'Hola Elvia, quiero la Caja regalo personalizada 🎁',
+    description: 'Llavero personalizado con el nombre de tu preferencia.',
+    whatsapp_message: 'Hola Elvia, quiero un llavero personalizado 🔑',
   },
 ]
 
-const placeholderEmojis: Record<string, string> = {
-  '1': '🌸', '2': '🕯️', '3': '🖼️',
-  '4': '🧼', '5': '🪴', '6': '🎁',
-}
 
 const containerVariants = {
   hidden: {},
@@ -79,7 +75,7 @@ const itemVariants = {
 
 export const Manualidades: React.FC = () => {
   const buildWALink = (msg: string) =>
-    `https://wa.me/TUNUMERO?text=${encodeURIComponent(msg)}`
+    `https://wa.me/573002255423?text=${encodeURIComponent(msg)}`
 
   return (
     <section
@@ -120,15 +116,14 @@ export const Manualidades: React.FC = () => {
             <motion.div key={product.id} variants={itemVariants}>
               <Card className="flex flex-col gap-4 overflow-hidden p-0">
                 {/* Image placeholder */}
-                <div
-                  className="w-full aspect-square flex items-center justify-center text-6xl rounded-t-3xl"
-                  style={{
-                    background:
-                      'linear-gradient(145deg, #f9f0f8 0%, #fce8ec 100%)',
-                  }}
-                >
-                  {placeholderEmojis[product.id] ?? '🎨'}
-                </div>
+                <div className="w-full aspect-square overflow-hidden rounded-t-3xl">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>  
 
                 {/* Content */}
                 <div className="flex flex-col gap-3 px-5 pb-5">
@@ -137,7 +132,7 @@ export const Manualidades: React.FC = () => {
                       {product.name}
                     </h3>
                     <span className="font-heading font-bold text-sm text-primary-lilac whitespace-nowrap">
-                      ${product.price.toLocaleString('es-MX')} MXN
+                      ${product.price.toLocaleString('es-MX')} COP
                     </span>
                   </div>
 

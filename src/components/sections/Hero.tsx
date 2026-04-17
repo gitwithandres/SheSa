@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { Button } from '../ui/Button'
 
 const WA_LINK =
-  'https://wa.me/TUNUMERO?text=Hola%20Elvia%20quiero%20información%20sobre%20SheSa'
+  'https://wa.me/573002255423?text=Hola%20Elvia%20quiero%20información%20sobre%20SheSa'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 32 },
@@ -100,20 +100,7 @@ export const Hero: React.FC = () => {
               variants={fadeUp}
               className="flex items-center gap-3 mt-2"
             >
-              <div className="flex -space-x-2">
-                {['#C4A0BC','#E1B9DA','#E2B4A6'].map((c, i) => (
-                  <div
-                    key={i}
-                    className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center text-xs font-heading font-bold text-white"
-                    style={{ background: c }}
-                  >
-                    {['E','M','L'][i]}
-                  </div>
-                ))}
-              </div>
-              <p className="font-body text-xs text-neutral-500">
-                +200 mamás ya haciendo crecer su negocio ✨
-              </p>
+              
             </motion.div>
           </motion.div>
 
@@ -157,16 +144,11 @@ export const Hero: React.FC = () => {
                   background: 'linear-gradient(145deg, #E6C2E0 0%, #E4C6CE 50%, #E2B4A6 100%)',
                 }}
               >
-                <span className="text-7xl">🌸</span>
-                <div className="text-center px-6">
-                  <p className="font-script text-3xl text-white drop-shadow">Elvia Martínez</p>
-                  <p className="font-body text-sm text-white/80 mt-1">Fundadora de SheSa</p>
-                </div>
-                <div className="absolute bottom-4 left-0 right-0 text-center">
-                  <p className="font-body text-[10px] text-white/60 italic">
-                    [ Reemplaza con tu foto aquí ]
-                  </p>
-                </div>
+                <img
+                  src="https://res.cloudinary.com/dq7wcdneb/image/upload/v1776357307/WhatsApp_Image_2026-04-16_at_11.33.36_AM_j9vhmy.jpg"
+                  alt="Elvia Martínez"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </motion.div>

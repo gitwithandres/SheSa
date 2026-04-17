@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { Button } from '../ui/Button'
 
 const WA_LINK =
-  'https://wa.me/TUNUMERO?text=Hola%20Elvia%20quiero%20información%20sobre%20SheSa'
+  'https://wa.me/573002255423?text=Hola%20Elvia%20quiero%20información%20sobre%20SheSa'
 
 const WhatsAppIcon: React.FC<{ className?: string }> = ({ className = '' }) => (
   <svg

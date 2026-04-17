@@ -10,7 +10,7 @@ const navLinks = [
 ]
 
 const WA_LINK =
-  'https://wa.me/TUNUMERO?text=Hola%20Elvia%20quiero%20información%20sobre%20SheSa'
+  'https://wa.me/573002255423?text=Hola%20Elvia%20quiero%20información%20sobre%20SheSa'
 
 export const Navbar: React.FC = () => {
   const [scrolled,     setScrolled]     = useState(false)

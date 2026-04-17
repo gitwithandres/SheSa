@@ -18,7 +18,7 @@ const options: FarmasiOption[] = [
     description:
       'Descubre toda la línea Farmasi: maquillaje, cuidado personal y más, con los mejores precios directos.',
     cta: 'Ir a mi tienda Farmasi',
-    href: 'https://www.farmasi.com/TUENLACE',
+    href: 'https://www.co.farmasi.com/elvimartinez17',
     variant: 'primary',
   },
   {
@@ -27,7 +27,7 @@ const options: FarmasiOption[] = [
     description:
       'Regístrate como cliente VIP y accede a descuentos exclusivos, ofertas especiales y beneficios únicos.',
     cta: 'Quiero ser cliente VIP',
-    href: 'https://www.farmasi.com/TUENLACE/registro',
+    href: 'https://www.co.farmasi.com/elvimartinez17/register/customer',
     variant: 'outline',
   },
   {
@@ -36,7 +36,7 @@ const options: FarmasiOption[] = [
     description:
       'Únete a SheSa como distribuidora Farmasi y comienza a generar ingresos mientras usas productos que amas.',
     cta: 'Quiero unirme al equipo',
-    href: 'https://wa.me/TUNUMERO?text=Hola%20Elvia%2C%20quiero%20ser%20parte%20de%20tu%20equipo%20Farmasi%20%F0%9F%8C%9F',
+    href: 'https://www.co.farmasi.com/elvimartinez17/register/beautyinfluencer',
     variant: 'ghost',
   },
 ]
