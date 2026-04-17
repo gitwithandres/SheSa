@@ -153,6 +153,7 @@ export const Hero: React.FC = () => {
             </div>
           </motion.div>
         </div>
+        <br />
       </div>
 
       {/* Scroll indicator */}
