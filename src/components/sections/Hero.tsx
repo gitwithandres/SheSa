@@ -61,7 +61,7 @@ export const Hero: React.FC = () => {
             {/* Script title */}
             <motion.h1
               variants={fadeUp}
-              className="font-script text-6xl sm:text-7xl leading-tight text-gradient-shesa"
+              className="font-script text-6xl sm:text-7xl leading-tight py-2 text-gradient-shesa"
             >
               Tu momento<br />es ahora
             </motion.h1>

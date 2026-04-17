@@ -35,7 +35,7 @@ export const Navbar: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-2">
-          <span className="font-script text-4xl leading-none text-gradient-shesa">
+          <span className="font-script text-4xl leading-none py-1 text-gradient-shesa">
             SheSa
           </span>
         </a>

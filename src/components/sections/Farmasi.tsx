@@ -87,7 +87,8 @@ export const Farmasi: React.FC = () => {
           <span className="inline-block font-body text-xs font-semibold tracking-widest text-primary-lilac uppercase mb-3">
             Belleza con propósito
           </span>
-          <h2 className="font-script text-5xl sm:text-6xl text-gradient-shesa mb-4">
+          <br />
+          <h2 className="font-script text-5xl sm:text-6xl py-1 text-gradient-shesa mb-4">
             Farmasi
           </h2>
           <p className="font-body text-base text-neutral-500 max-w-2xl mx-auto leading-relaxed">

@@ -69,7 +69,8 @@ export const Emprender: React.FC = () => {
           <span className="inline-block font-body text-xs font-semibold tracking-widest text-primary-lilac uppercase mb-3">
             ¿Por qué SheSa?
           </span>
-          <h2 className="font-script text-5xl sm:text-6xl text-gradient-shesa mb-4">
+          <br />
+          <h2 className="font-script text-5xl sm:text-6xl py-2 text-gradient-shesa mb-4">
             Emprender contigo
           </h2>
           <p className="font-body text-base text-neutral-500 max-w-xl mx-auto leading-relaxed">

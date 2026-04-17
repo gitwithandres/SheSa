@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Brand */}
         <div className="flex flex-col items-center md:items-start gap-1">
-          <span className="font-script text-4xl text-gradient-shesa">SheSa</span>
+          <span className="font-script text-4xl py-2 text-gradient-shesa">SheSa</span>
           <p className="font-body text-xs text-neutral-500 max-w-xs text-center md:text-left">
             Emprendimiento con propósito · Mamás que crecen juntas
           </p>
