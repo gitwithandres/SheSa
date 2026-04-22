@@ -1,19 +1,19 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { Button } from '../ui/Button'
+import React from "react";
+import { motion } from "framer-motion";
+import { Button } from "../ui/Button";
 
 const WA_LINK =
-  'https://wa.me/573002255423?text=Hola%20Elvia%20quiero%20información%20sobre%20SheSa'
+  "https://chat.whatsapp.com/BBgGmAEfY50LRJ2cNvAQCZ";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 32 },
-  show:   { opacity: 1, y: 0 },
-}
+  show: { opacity: 1, y: 0 },
+};
 
 const stagger = {
   hidden: {},
-  show:   { transition: { staggerChildren: 0.18 } },
-}
+  show: { transition: { staggerChildren: 0.18 } },
+};
 
 export const Hero: React.FC = () => {
   return (
@@ -28,7 +28,7 @@ export const Hero: React.FC = () => {
         className="pointer-events-none absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full opacity-30"
         style={{
           background:
-            'radial-gradient(circle, #E6C2E0 0%, #E1B9DA 40%, transparent 70%)',
+            "radial-gradient(circle, #E6C2E0 0%, #E1B9DA 40%, transparent 70%)",
         }}
       />
       <div
@@ -36,13 +36,12 @@ export const Hero: React.FC = () => {
         className="pointer-events-none absolute bottom-0 -left-20 w-[400px] h-[400px] rounded-full opacity-20"
         style={{
           background:
-            'radial-gradient(circle, #E2B4A6 0%, #E4C6CE 50%, transparent 70%)',
+            "radial-gradient(circle, #E2B4A6 0%, #E4C6CE 50%, transparent 70%)",
         }}
       />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-
           {/* ── Text column ── */}
           <motion.div
             variants={stagger}
@@ -55,43 +54,54 @@ export const Hero: React.FC = () => {
               variants={fadeUp}
               className="inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm border border-primary-pink/40 text-primary-lilac text-xs font-heading font-semibold px-4 py-1.5 rounded-full shadow-card"
             >
-              🌸 Comunidad de mamás emprendedoras
+              🌸 Comunidad de mamás que crecen juntas
             </motion.span>
 
-            {/* Script title */}
+            {/* Main title */}
             <motion.h1
               variants={fadeUp}
-              className="font-script text-6xl sm:text-7xl leading-tight py-2 text-gradient-shesa"
+              className="font-heading font-bold text-3xl sm:text-4xl lg:text-[2.6rem] text-neutral-800 leading-snug"
             >
-              Tu momento<br />es ahora
+              Empieza a generar ingresos desde casa{" "}
+              <span className="text-primary-lilac">
+                (aunque no sepas por dónde empezar)
+              </span>
             </motion.h1>
 
-            {/* Subheading */}
-            <motion.h2
-              variants={fadeUp}
-              className="font-heading font-bold text-2xl sm:text-3xl text-neutral-800 leading-snug"
-            >
-              Genera ingresos reales<br />
-              <span className="text-primary-lilac">sin descuidar a tu familia</span>
-            </motion.h2>
-
-            {/* Body text */}
+            {/* Subtitle */}
             <motion.p
               variants={fadeUp}
-              className="font-body text-base text-neutral-600 max-w-md leading-relaxed"
+              className="font-body text-base sm:text-lg text-neutral-600 max-w-md leading-relaxed"
             >
-              Hola, soy <strong className="text-primary-lilac font-semibold">Elvia Martínez</strong>.
-              En SheSa te acompaño a construir tu propio negocio desde casa,
-              a tu ritmo, con una comunidad que te impulsa a crecer de verdad.
+              Únete a mi comunidad de WhatsApp y recibe ideas simples,
+              motivación y espacios para crecer a tu ritmo,{" "}
+              <strong className="text-neutral-700">
+                sin descuidar tu familia.
+              </strong>
             </motion.p>
 
-            {/* CTAs */}
+            {/* Presentation */}
+            <motion.p
+              variants={fadeUp}
+              className="font-body text-sm text-neutral-500 max-w-md leading-relaxed"
+            >
+              Soy{" "}
+              <strong className="text-primary-lilac font-semibold">
+                Elvia Martínez
+              </strong>{" "}
+              y creé SheSa para acompañar a mamás que quieren avanzar poco a
+              poco, sin presión y con propósito.
+            </motion.p>
+
+            {/* CTA */}
             <motion.div variants={fadeUp} className="flex flex-wrap gap-3 pt-2">
-              <Button href={WA_LINK} target="_blank" rel="noopener noreferrer" size="lg">
-                Quiero emprender 🚀
-              </Button>
-              <Button href="#emprender" variant="outline" size="lg">
-                Conoce más
+              <Button
+                href={WA_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                size="lg"
+              >
+                Unirme a la comunidad 💬
               </Button>
             </motion.div>
 
@@ -100,7 +110,21 @@ export const Hero: React.FC = () => {
               variants={fadeUp}
               className="flex items-center gap-3 mt-2"
             >
-              
+              <div className="flex -space-x-2">
+                {["#C4A0BC", "#E1B9DA", "#E2B4A6"].map((c, i) => (
+                  <div
+                    key={i}
+                    className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center text-xs font-heading font-bold text-white"
+                    style={{ background: c }}
+                  >
+                    {["E", "M", "L"][i]}
+                  </div>
+                ))}
+              </div>
+              <p className="font-body text-xs text-neutral-500">
+                +200 mamás ya están dando pequeños pasos que hacen grandes
+                cambios ✨
+              </p>
             </motion.div>
           </motion.div>
 
@@ -114,34 +138,48 @@ export const Hero: React.FC = () => {
             {/* Floating card decorations */}
             <motion.div
               animate={{ y: [0, -10, 0] }}
-              transition={{ repeat: Infinity, duration: 5, ease: 'easeInOut' }}
+              transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
               className="absolute -top-6 -left-6 glass rounded-2xl px-4 py-3 shadow-soft z-20 hidden sm:flex items-center gap-2"
             >
-              <span className="text-xl">💰</span>
+              <span className="text-xl">💡</span>
               <div>
-                <p className="font-heading text-xs font-bold text-neutral-800">Ingresos reales</p>
-                <p className="font-body text-[10px] text-neutral-500">Desde el primer mes</p>
+                <p className="font-heading text-xs font-bold text-neutral-800">
+                  Ideas simples
+                </p>
+                <p className="font-body text-[10px] text-neutral-500">
+                  Para crecer desde casa
+                </p>
               </div>
             </motion.div>
 
             <motion.div
               animate={{ y: [0, 10, 0] }}
-              transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut', delay: 1 }}
+              transition={{
+                repeat: Infinity,
+                duration: 6,
+                ease: "easeInOut",
+                delay: 1,
+              }}
               className="absolute -bottom-4 -right-4 glass rounded-2xl px-4 py-3 shadow-soft z-20 hidden sm:flex items-center gap-2"
             >
               <span className="text-xl">🌸</span>
               <div>
-                <p className="font-heading text-xs font-bold text-neutral-800">Comunidad</p>
-                <p className="font-body text-[10px] text-neutral-500">Crecemos juntas</p>
+                <p className="font-heading text-xs font-bold text-neutral-800">
+                  Comunidad
+                </p>
+                <p className="font-body text-[10px] text-neutral-500">
+                  Crecemos juntas
+                </p>
               </div>
             </motion.div>
 
-            {/* Main image placeholder */}
+            {/* Main image */}
             <div className="relative w-full max-w-sm aspect-[3/4] rounded-[2.5rem] overflow-hidden shadow-hover">
               <div
                 className="w-full h-full flex flex-col items-center justify-center gap-4"
                 style={{
-                  background: 'linear-gradient(145deg, #E6C2E0 0%, #E4C6CE 50%, #E2B4A6 100%)',
+                  background:
+                    "linear-gradient(145deg, #E6C2E0 0%, #E4C6CE 50%, #E2B4A6 100%)",
                 }}
               >
                 <img
@@ -173,5 +211,5 @@ export const Hero: React.FC = () => {
         </motion.div>
       </motion.div>
     </section>
-  )
-}
+  );
+};

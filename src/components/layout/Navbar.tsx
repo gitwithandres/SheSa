@@ -3,14 +3,14 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from '../ui/Button'
 
 const navLinks = [
-  { label: 'Inicio',        href: '#hero' },
-  { label: 'Emprender',     href: '#emprender' },
-  { label: 'Manualidades',  href: '#manualidades' },
-  { label: 'Farmasi',       href: '#farmasi' },
+  { label: 'Inicio',      href: '#hero' },
+  { label: 'Comunidad',   href: '#que-encontraras' },
+  { label: 'Mi Camino',   href: '#mi-camino' },
+  { label: 'Contacto',    href: '#contacto' },
 ]
 
 const WA_LINK =
-  'https://wa.me/573002255423?text=Hola%20Elvia%20quiero%20información%20sobre%20SheSa'
+  'https://wa.me/573002255423?text=Hola%20Elvia%20quiero%20unirme%20a%20la%20comunidad%20SheSa'
 
 export const Navbar: React.FC = () => {
   const [scrolled,     setScrolled]     = useState(false)

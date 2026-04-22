@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { Button } from '../ui/Button'
 
 const WA_LINK =
-  'https://wa.me/573002255423?text=Hola%20Elvia%20quiero%20información%20sobre%20SheSa'
+  'https://chat.whatsapp.com/BBgGmAEfY50LRJ2cNvAQCZ'
 
 const WhatsAppIcon: React.FC<{ className?: string }> = ({ className = '' }) => (
   <svg
@@ -22,7 +22,7 @@ export const WhatsAppCTA: React.FC = () => {
   return (
     <section
       id="contacto"
-      aria-label="Contáctame por WhatsApp"
+      aria-label="Cierre final – Únete a la comunidad"
       className="relative py-24 overflow-hidden"
     >
       {/* Gradient background */}
@@ -59,12 +59,12 @@ export const WhatsAppCTA: React.FC = () => {
 
           {/* Heading */}
           <h2 className="font-script text-5xl sm:text-6xl text-white drop-shadow-md">
-            ¿Lista para empezar?
+            No tienes que hacerlo sola…
           </h2>
 
           <p className="font-body text-white/90 text-base sm:text-lg max-w-xl leading-relaxed">
-            Da el primer paso hoy. Escríbeme directamente por WhatsApp y
-            con gusto te cuento todo sobre SheSa, sin compromisos. 💬
+            Este es un espacio para crecer, avanzar y volver a encontrarte
+            contigo misma.
           </p>
 
           {/* WhatsApp button */}
@@ -82,12 +82,12 @@ export const WhatsAppCTA: React.FC = () => {
               icon={<WhatsAppIcon className="w-5 h-5" />}
               className="text-lg px-10 py-4 shadow-lg"
             >
-              Escríbeme por WhatsApp
+               Unirme al grupo de WhatsApp 💬
             </Button>
           </motion.div>
 
           <p className="font-body text-white/70 text-xs">
-            Respondo en menos de 24 horas · Sin presiones
+            Sin presiones · Tu ritmo · Tu espacio
           </p>
         </motion.div>
       </div>

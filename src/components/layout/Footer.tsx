@@ -10,17 +10,17 @@ export const Footer: React.FC = () => {
         <div className="flex flex-col items-center md:items-start gap-1">
           <span className="font-script text-4xl py-2 text-gradient-shesa">SheSa</span>
           <p className="font-body text-xs text-neutral-500 max-w-xs text-center md:text-left">
-            Emprendimiento con propósito · Mamás que crecen juntas
+            Comunidad de mamás que crecen juntas · Con propósito y a su ritmo
           </p>
         </div>
 
         {/* Links rápidos */}
         <nav className="flex flex-wrap justify-center gap-5">
           {[
-            { label: 'Inicio',       href: '#hero'         },
-            { label: 'Emprender',    href: '#emprender'    },
-            { label: 'Manualidades', href: '#manualidades' },
-            { label: 'Farmasi',      href: '#farmasi'      },
+            { label: 'Inicio',      href: '#hero'            },
+            { label: 'Comunidad',   href: '#que-encontraras' },
+            { label: 'Mi Camino',   href: '#mi-camino'       },
+            { label: 'Contacto',    href: '#contacto'        },
           ].map((l) => (
             <a
               key={l.href}
